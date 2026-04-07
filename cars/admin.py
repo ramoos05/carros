@@ -1,4 +1,5 @@
 from django.contrib import admin
+from unfold.admin import ModelAdmin
 from cars.models import Car,Brand
 
 class CarAdmin(admin.ModelAdmin):
