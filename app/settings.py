@@ -163,49 +163,49 @@ UNFOLD = {
         "show_all_applications": False,
         "navigation": [
             {
-                "title": _("Operação"),
+                "title": ("Operação"),
                 "separator": True,
                 "items": [
                     {
-                        "title": _("Agendamentos"),
+                        "title": ("Agendamentos"),
                         "icon": "calendar_month",
                         "link": "/admin/barbearia/agendamento/",
                         "badge": "barbearia.admin.agendamentos_pendentes_badge",
                     },
                     {
-                        "title": _("Horários"),
+                        "title": ("Horários"),
                         "icon": "schedule",
                         "link": "/admin/barbearia/horario/",
                     },
                 ],
             },
             {
-                "title": _("Catálogo"),
+                "title": ("Catálogo"),
                 "separator": True,
                 "items": [
                     {
-                        "title": _("Serviços"),
+                        "title": ("Serviços"),
                         "icon": "content_cut",
                         "link": "/admin/barbearia/servico/",
                     },
                     {
-                        "title": _("Tarifas por Dia"),
+                        "title": ("Tarifas por Dia"),
                         "icon": "payments",
                         "link": "/admin/barbearia/tarifadia/",
                     },
                     {
-                        "title": _("Planos"),
+                        "title": ("Planos"),
                         "icon": "card_membership",
                         "link": "/admin/barbearia/plano/",
                     },
                 ],
             },
             {
-                "title": _("Configuração"),
+                "title": ("Configuração"),
                 "separator": True,
                 "items": [
                     {
-                        "title": _("Dados da Barbearia"),
+                        "title": ("Dados da Barbearia"),
                         "icon": "settings",
                         "link": "/admin/barbearia/configuracao/",
                     },
