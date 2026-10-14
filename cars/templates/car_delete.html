@@ -2,49 +2,43 @@
 
 {% block content %}
   <style>
-    .buttons-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
+    .card {
+      max-width: 520px;
+      margin: 40px auto 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--danger);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      text-align: center;
     }
 
-    .btn {
-      display: inline-block;
-      background-color: #c70000;
-      color: #000000;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-      margin: 0 10px;
+    .card-header { padding: 32px 32px 0; }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
     }
 
-    .btn:hover {
-      background-color: #ff0101;
+    .card-body { padding: 14px 32px 34px; }
+
+    .card-body p {
+      color: var(--text-muted);
+      margin: 0;
     }
 
-    .btn-danger {
-      background-color: #313131;
-       color: #ffffff;
-      text-decoration: none !important;
+    .card-body p strong { color: var(--text); }
+
+    .card-body .buttons-container { margin-top: 28px; }
+
+    .card .btn-danger {
+      background-color: var(--danger);
+      border-color: var(--danger);
+      color: #fff;
     }
 
-    .btn-danger:hover {
-      background-color: #fa0a01;
-    }
-
-    .error-message {
-      color: #d9534f;
-      font-size: 14px;
-      margin-top: 5px;
-    }
-
-    a {
-      text-decoration: none !important;
-    }
+    .card .btn-danger:hover { background-color: #f55; border-color: #f55; }
   </style>
   <div class="card">
     <div class="card-header">
