@@ -1,101 +1,54 @@
-# 🚗 Carros - Aplicação Web com Django
+# Carros
 
-Aplicação web desenvolvida com Django para listagem e visualização de veículos, com deploy em ambiente real (AWS). O projeto simula um sistema de catálogo automotivo e foi construído com foco em boas práticas de backend.
+Aplicação web em Django para listagem e visualização de veículos, com autenticação de usuários. Foi feita a partir de um curso de Django, e eu configurei o deploy em um servidor Linux na AWS EC2.
 
----
+# Midia do projeto
 
-## 📌 Sobre o Projeto
+<img width="1917" height="866" alt="Captura de tela 2026-10-13 221549" src="https://github.com/user-attachments/assets/238b6e8d-d71a-47ad-8bf9-fc772040389f" />
+<img width="1917" height="863" alt="Captura de tela 2026-10-13 222825" src="https://github.com/user-attachments/assets/b3220a10-0d2b-4a0e-9cb4-c44bd4e4b13b" />
+<img width="1917" height="861" alt="Captura de tela 2026-10-13 222847" src="https://github.com/user-attachments/assets/c4fb8c52-bcb8-48dc-bc70-7b86056c9201" />
+<img width="1917" height="863" alt="Captura de tela 2026-10-13 222905" src="https://github.com/user-attachments/assets/b4b08e9b-02be-418f-a07d-f5e09a7f12d8" />
 
-O **Carros** é uma aplicação backend que permite listar veículos e visualizar suas informações, servindo como base para sistemas maiores como marketplaces ou plataformas de revenda.
 
-Este projeto foi desenvolvido com foco em aprendizado prático de desenvolvimento web com Django e experiência com deploy em produção.
 
----
+## Tecnologias
 
-## 🚀 Tecnologias Utilizadas
+Python, Django,PostgreSQL, HTML e CSS, AWS EC2.
 
-* Python
-* Django
-* SQLite / PostgreSQL
-* HTML / CSS
-* AWS (EC2)
+## Funcionalidades
 
----
+Listagem de veículos, página de detalhes de cada carro, cadastro e login de usuários (app accounts) e painel admin.
 
-## ⚙️ Funcionalidades
+## Deploy
 
-* 📋 Listagem de veículos
-* 🔎 Visualização de detalhes dos carros
-* 🧱 Estrutura modular com Django
-* 🌐 Deploy em ambiente de produção
+Publicado em um servidor Linux na AWS EC2. O ambiente está desativado, mas o código completo está neste repositório.
 
----
+## Como rodar localmente
 
-## 🖥️ Demonstração
-
-A aplicação está disponível online:
-
-👉 http://54.161.166.153/cars/
-
----
-
-## 🛠️ Como rodar o projeto localmente
-
-```bash
-# Clone o repositório
 git clone https://github.com/ramoos05/carros.git
-
-# Acesse a pasta
 cd carros
 
-# Crie um ambiente virtual
 python -m venv venv
-
-# Ative o ambiente virtual (Windows)
 venv\Scripts\activate
 
-# Instale as dependências
 pip install -r requirements.txt
 
-# Execute as migrações
 python manage.py migrate
-
-# Inicie o servidor
 python manage.py runserver
-```
 
----
+## Estrutura
 
-## 📁 Estrutura do Projeto
-
-```
 carros/
-│
-├── cars/            # App responsável pelos veículos
-├── core/            # Configurações principais do projeto
-├── manage.py
-└── requirements.txt
-```
+  accounts/   autenticação de usuários
+  app/        configurações do projeto
+  cars/       app dos veículos
+  manage.py
+  requirements.txt
 
----
+## Aprendizados
 
-## 🧠 Decisões Técnicas
+Deploy de uma aplicação Django em servidor cloud, configuração de ambiente virtual e dependências, organização de projeto em apps.
 
-* Utilização do Django pela sua estrutura robusta e produtividade
-* Organização do projeto em apps para melhor separação de responsabilidades
-* Deploy em AWS EC2 para simular ambiente de produção real
+## Autor
 
----
-
-## 📚 Aprendizados
-
-* Deploy de aplicação Django em servidor cloud (AWS)
-* Configuração de ambiente virtual e dependências
-* Estruturação de projetos com Django
-* Integração com banco de dados
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por Patrick Ramos
+Patrick Ramos
